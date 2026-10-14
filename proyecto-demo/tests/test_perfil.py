@@ -19,7 +19,7 @@ class PerfilTests(unittest.TestCase):
         perfil.guardar_perfil(self.connection, "sergio", "Sergio", "Hola")
         self.assertEqual(
             perfil.obtener_perfil(self.connection, "sergio"),
-            {"username": "sergio", "display_name": "Sergiox", "bio": "Hola"},
+            {"username": "sergio", "display_name": "Sergio", "bio": "Hola"},
         )
 
     def test_perfil_inexistente_devuelve_none(self):
